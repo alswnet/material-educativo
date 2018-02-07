@@ -1,18 +1,8 @@
-/*
-    This sketch demonstrates how to set up a simple HTTP-like server.
-    The server will set a GPIO pin depending on the request
-      http://server_ip/gpio/0 will set the GPIO2 low,
-      http://server_ip/gpio/1 will set the GPIO2 high
-    server_ip is the IP address of the ESP8266 module, will be
-    printed to Serial when the module is connected.
-*/
-
 #include <ESP8266WiFi.h>
 
-const char* ssid = "ALSW";
-const char* password = "21241324";
-// Create an instance of the server
-// specify the port to listen on as an argument
+const char* ssid = "TURBONETT_ALSW";
+const char* password = "2526-4897";
+
 WiFiServer server(80);
 int val;
 
